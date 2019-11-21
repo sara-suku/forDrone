@@ -7,11 +7,11 @@ platform:
   os: linux
 
 steps:
-- name: test
-- image: alpine/git
+  name: test
+  image: alpine/git
   commands:
-  - Run.command -hi
+    Run.command -hi
 when:
     event:
-    - push
-    - tag
+      push
+      tag
