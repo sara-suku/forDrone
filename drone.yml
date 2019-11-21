@@ -9,6 +9,9 @@ platform:
 steps:
   -  name: test
      image: alpine/git
+     image: java:8-jdk
+     pull: true
+     
      commands:
        - chmod 777 ./Run.command
        - ./Run.command -hi
