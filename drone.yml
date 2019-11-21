@@ -8,9 +8,9 @@ platform:
 
 steps:
   -  name: test
-  -  image: alpine/git
-  commands:
-    Run.command -hi
+     image: alpine/git
+     commands:
+       Run.command -hi
 when:
     event:
       - push
