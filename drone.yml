@@ -10,6 +10,7 @@ steps:
   -  name: test
      image: alpine/git
      commands:
+       - chmod 777 ./Run.command
        - ./Run.command -hi
 when:
     event:
