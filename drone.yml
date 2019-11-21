@@ -10,7 +10,7 @@ steps:
   -  name: test
      image: alpine/git
      commands:
-       Run.command -hi
+       - ./Run.command -hi
 when:
     event:
       - push
