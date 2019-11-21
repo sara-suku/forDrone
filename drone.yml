@@ -10,3 +10,7 @@ steps:
 - name: test
   commands:
   - ./Run.command -hi
+when:
+    event:
+    - push
+    - tag
