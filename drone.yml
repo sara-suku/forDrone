@@ -14,7 +14,7 @@ steps:
      
      commands:
        - chmod 777 ./Run.command
-       - ./Run.command -hi
+       - ./Run.command -run -project_location "Projects/DemoProject" -scenario "AngularJS_Support" -testcase "AngularJS_Test" -browser "Chrome"
 when:
     event:
       - push
